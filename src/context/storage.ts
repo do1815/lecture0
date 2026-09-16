@@ -1,6 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const PREFIX = 'harvest-market:';
+const PREFIX = 'bustan:';
 
 export const StorageKeys = {
   language: `${PREFIX}language`,

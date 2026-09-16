@@ -1,6 +1,6 @@
 {
   "common": {
-    "appName": "Harvest Market",
+    "appName": "Bustan",
     "cancel": "Cancel",
     "save": "Save",
     "delete": "Delete",
@@ -26,7 +26,7 @@
     "arabic": "العربية"
   },
   "role": {
-    "title": "How will you use Harvest Market?",
+    "title": "How will you use Bustan?",
     "subtitle": "You can switch later from your profile",
     "farmer": "I'm a Farmer",
     "farmerDesc": "Sell your fruits and vegetables directly to buyers",
@@ -134,7 +134,7 @@
     "language": "Language",
     "switchRole": "Switch role",
     "switchRoleConfirm": "Switching roles will take you to the role selection screen. Continue?",
-    "about": "Harvest Market connects farmers directly with buyers for fresh, fairly priced produce.",
+    "about": "Bustan connects farmers directly with buyers for fresh, fairly priced produce.",
     "version": "Version 1.0.0"
   }
 }

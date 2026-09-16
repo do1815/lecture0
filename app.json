@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "Harvest Market",
-    "slug": "harvest-market",
-    "description": "Connect local farmers with buyers to trade fresh fruits and vegetables, in Arabic and English.",
+    "name": "Bustan",
+    "slug": "bustan",
+    "description": "بستان — Connect local farmers with buyers to trade fresh fruits and vegetables, in Arabic and English.",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
