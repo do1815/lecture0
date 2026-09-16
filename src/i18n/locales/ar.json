@@ -1,0 +1,140 @@
+{
+  "common": {
+    "appName": "سوق الحصاد",
+    "cancel": "إلغاء",
+    "save": "حفظ",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "continue": "متابعة",
+    "back": "رجوع",
+    "search": "ابحث عن المحاصيل...",
+    "all": "الكل",
+    "fruit": "فواكه",
+    "vegetable": "خضروات",
+    "kg": "كجم",
+    "box": "صندوق",
+    "piece": "قطعة",
+    "currency": "USD",
+    "loading": "جارٍ التحميل...",
+    "empty": "لا يوجد شيء هنا بعد",
+    "requiredField": "هذا الحقل مطلوب"
+  },
+  "language": {
+    "title": "اختر لغتك",
+    "subtitle": "Choose your preferred language",
+    "english": "English",
+    "arabic": "العربية"
+  },
+  "role": {
+    "title": "كيف تريد استخدام سوق الحصاد؟",
+    "subtitle": "يمكنك تغيير ذلك لاحقًا من صفحة حسابك",
+    "farmer": "أنا مزارع",
+    "farmerDesc": "بِع فواكهك وخضرواتك مباشرة للمشترين",
+    "buyer": "أنا مشترٍ",
+    "buyerDesc": "تصفح واطلب محاصيل طازجة من مزارعين محليين"
+  },
+  "auth": {
+    "title": "أنشئ ملفك الشخصي",
+    "subtitle": "فقط بعض التفاصيل للبدء",
+    "name": "الاسم الكامل",
+    "namePlaceholder": "مثال: سارة أحمد",
+    "phone": "رقم الهاتف",
+    "phonePlaceholder": "مثال: 07700000000",
+    "city": "المدينة",
+    "cityPlaceholder": "مثال: بغداد",
+    "getStarted": "ابدأ الآن",
+    "logout": "تسجيل الخروج"
+  },
+  "tabs": {
+    "market": "السوق",
+    "cart": "السلة",
+    "orders": "الطلبات",
+    "dashboard": "محاصيلي",
+    "addListing": "إضافة",
+    "profile": "حسابي"
+  },
+  "market": {
+    "title": "طازج من المزارع المحلية",
+    "by": "بواسطة",
+    "available": "متوفر",
+    "addToCart": "أضف إلى السلة",
+    "noResults": "لا توجد محاصيل مطابقة لبحثك"
+  },
+  "product": {
+    "title": "تفاصيل المحصول",
+    "description": "الوصف",
+    "farmer": "المزارع",
+    "location": "الموقع",
+    "pricePerUnit": "السعر لكل {{unit}}",
+    "quantity": "الكمية",
+    "totalPrice": "السعر الإجمالي",
+    "addToCart": "أضف إلى السلة",
+    "addedToCart": "تمت الإضافة إلى السلة"
+  },
+  "cart": {
+    "title": "سلتك",
+    "emptyTitle": "سلتك فارغة",
+    "emptySubtitle": "تصفح السوق وأضف بعض المحاصيل الطازجة",
+    "browseMarket": "تصفح السوق",
+    "remove": "إزالة",
+    "subtotal": "المجموع الفرعي",
+    "checkout": "إرسال الطلب",
+    "orderPlaced": "تم إرسال طلبك بنجاح!",
+    "orderPlacedSubtitle": "سيقوم المزارع(ون) بتأكيد طلبك قريبًا"
+  },
+  "orders": {
+    "title": "طلباتي",
+    "incomingTitle": "الطلبات الواردة",
+    "emptyTitle": "لا توجد طلبات بعد",
+    "emptySubtitleBuyer": "ستظهر هنا الطلبات التي ترسلها",
+    "emptySubtitleFarmer": "ستظهر هنا الطلبات الواردة من المشترين",
+    "order": "طلب",
+    "status": {
+      "pending": "قيد الانتظار",
+      "confirmed": "مؤكد",
+      "delivered": "تم التسليم",
+      "cancelled": "ملغى"
+    },
+    "confirm": "تأكيد",
+    "markDelivered": "تحديد كمُسلَّم",
+    "cancel": "إلغاء الطلب",
+    "total": "الإجمالي",
+    "buyer": "المشتري",
+    "items": "{{count}} عنصر",
+    "items_other": "{{count}} عناصر"
+  },
+  "dashboard": {
+    "title": "محاصيلي",
+    "emptyTitle": "لم تقم بإضافة أي محاصيل بعد",
+    "emptySubtitle": "اضغط على تبويب إضافة لعرض أول محصول لك",
+    "quantityLeft": "متبقي {{count}} {{unit}}"
+  },
+  "addListing": {
+    "title": "أضف محصولاً",
+    "editTitle": "تعديل المحصول",
+    "nameEn": "الاسم (إنجليزي)",
+    "nameAr": "الاسم (عربي)",
+    "descriptionEn": "الوصف (إنجليزي)",
+    "descriptionAr": "الوصف (عربي)",
+    "category": "الفئة",
+    "price": "السعر",
+    "unit": "الوحدة",
+    "quantity": "الكمية المتوفرة",
+    "emoji": "الأيقونة",
+    "submit": "نشر المحصول",
+    "update": "تحديث المحصول",
+    "deleteConfirmTitle": "هل تريد حذف هذا المحصول؟",
+    "success": "تم نشر المحصول!"
+  },
+  "profile": {
+    "title": "حسابي",
+    "role": "الدور",
+    "city": "المدينة",
+    "phone": "الهاتف",
+    "language": "اللغة",
+    "switchRole": "تغيير الدور",
+    "switchRoleConfirm": "سيأخذك تغيير الدور إلى شاشة اختيار الدور. هل تريد المتابعة؟",
+    "about": "سوق الحصاد يربط المزارعين مباشرة بالمشترين للحصول على محاصيل طازجة وبأسعار عادلة.",
+    "version": "الإصدار 1.0.0"
+  }
+}

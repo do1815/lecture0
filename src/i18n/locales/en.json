@@ -1,0 +1,140 @@
+{
+  "common": {
+    "appName": "Harvest Market",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "continue": "Continue",
+    "back": "Back",
+    "search": "Search produce...",
+    "all": "All",
+    "fruit": "Fruits",
+    "vegetable": "Vegetables",
+    "kg": "kg",
+    "box": "box",
+    "piece": "piece",
+    "currency": "USD",
+    "loading": "Loading...",
+    "empty": "Nothing here yet",
+    "requiredField": "This field is required"
+  },
+  "language": {
+    "title": "Choose your language",
+    "subtitle": "اختر لغتك المفضلة",
+    "english": "English",
+    "arabic": "العربية"
+  },
+  "role": {
+    "title": "How will you use Harvest Market?",
+    "subtitle": "You can switch later from your profile",
+    "farmer": "I'm a Farmer",
+    "farmerDesc": "Sell your fruits and vegetables directly to buyers",
+    "buyer": "I'm a Buyer",
+    "buyerDesc": "Browse and order fresh produce from local farmers"
+  },
+  "auth": {
+    "title": "Create your profile",
+    "subtitle": "Just a few details to get started",
+    "name": "Full name",
+    "namePlaceholder": "e.g. Sara Ahmed",
+    "phone": "Phone number",
+    "phonePlaceholder": "e.g. 07700000000",
+    "city": "City",
+    "cityPlaceholder": "e.g. Baghdad",
+    "getStarted": "Get Started",
+    "logout": "Log out"
+  },
+  "tabs": {
+    "market": "Market",
+    "cart": "Cart",
+    "orders": "Orders",
+    "dashboard": "My Listings",
+    "addListing": "Add",
+    "profile": "Profile"
+  },
+  "market": {
+    "title": "Fresh from local farms",
+    "by": "By",
+    "available": "available",
+    "addToCart": "Add to Cart",
+    "noResults": "No produce matches your search"
+  },
+  "product": {
+    "title": "Produce details",
+    "description": "Description",
+    "farmer": "Farmer",
+    "location": "Location",
+    "pricePerUnit": "Price per {{unit}}",
+    "quantity": "Quantity",
+    "totalPrice": "Total price",
+    "addToCart": "Add to Cart",
+    "addedToCart": "Added to cart"
+  },
+  "cart": {
+    "title": "Your Cart",
+    "emptyTitle": "Your cart is empty",
+    "emptySubtitle": "Browse the market and add some fresh produce",
+    "browseMarket": "Browse Market",
+    "remove": "Remove",
+    "subtotal": "Subtotal",
+    "checkout": "Place Order",
+    "orderPlaced": "Order placed successfully!",
+    "orderPlacedSubtitle": "The farmer(s) will confirm your order shortly"
+  },
+  "orders": {
+    "title": "My Orders",
+    "incomingTitle": "Incoming Orders",
+    "emptyTitle": "No orders yet",
+    "emptySubtitleBuyer": "Your placed orders will show up here",
+    "emptySubtitleFarmer": "Orders from buyers will show up here",
+    "order": "Order",
+    "status": {
+      "pending": "Pending",
+      "confirmed": "Confirmed",
+      "delivered": "Delivered",
+      "cancelled": "Cancelled"
+    },
+    "confirm": "Confirm",
+    "markDelivered": "Mark Delivered",
+    "cancel": "Cancel Order",
+    "total": "Total",
+    "buyer": "Buyer",
+    "items": "{{count}} item",
+    "items_other": "{{count}} items"
+  },
+  "dashboard": {
+    "title": "My Listings",
+    "emptyTitle": "You haven't listed any produce yet",
+    "emptySubtitle": "Tap the Add tab to list your first item",
+    "quantityLeft": "{{count}} {{unit}} left"
+  },
+  "addListing": {
+    "title": "List Produce",
+    "editTitle": "Edit Listing",
+    "nameEn": "Name (English)",
+    "nameAr": "Name (Arabic)",
+    "descriptionEn": "Description (English)",
+    "descriptionAr": "Description (Arabic)",
+    "category": "Category",
+    "price": "Price",
+    "unit": "Unit",
+    "quantity": "Quantity available",
+    "emoji": "Icon",
+    "submit": "Publish Listing",
+    "update": "Update Listing",
+    "deleteConfirmTitle": "Delete this listing?",
+    "success": "Listing published!"
+  },
+  "profile": {
+    "title": "Profile",
+    "role": "Role",
+    "city": "City",
+    "phone": "Phone",
+    "language": "Language",
+    "switchRole": "Switch role",
+    "switchRoleConfirm": "Switching roles will take you to the role selection screen. Continue?",
+    "about": "Harvest Market connects farmers directly with buyers for fresh, fairly priced produce.",
+    "version": "Version 1.0.0"
+  }
+}
