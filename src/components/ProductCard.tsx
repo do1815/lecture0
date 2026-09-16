@@ -4,6 +4,7 @@ import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 import { colors, radius, spacing } from '../theme/colors';
 import { Listing } from '../types';
+import { formatPrice } from '../utils/currency';
 
 interface Props {
   listing: Listing;
@@ -13,6 +14,7 @@ interface Props {
 export function ProductCard({ listing, onPress }: Props) {
   const { t, i18n } = useTranslation();
   const isAr = i18n.language === 'ar';
+  const lang = isAr ? 'ar' : 'en';
   const name = isAr ? listing.nameAr : listing.nameEn;
   const city = isAr ? listing.cityAr : listing.cityEn;
 
@@ -29,7 +31,7 @@ export function ProductCard({ listing, onPress }: Props) {
           {t('market.by')} {listing.farmerName} · {city}
         </Text>
         <Text style={styles.price}>
-          ${listing.pricePerUnit.toFixed(2)} / {t(`common.${listing.unit}`)}
+          {formatPrice(listing.pricePerUnit, lang)} / {t(`common.${listing.unit}`)}
         </Text>
       </View>
     </TouchableOpacity>

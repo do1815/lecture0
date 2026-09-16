@@ -8,6 +8,7 @@ import { QuantityStepper } from '../components/QuantityStepper';
 import { useApp } from '../context/AppContext';
 import { colors, radius, spacing } from '../theme/colors';
 import { MarketStackParamList } from '../navigation/types';
+import { formatPrice } from '../utils/currency';
 
 type Props = NativeStackScreenProps<MarketStackParamList, 'ProductDetail'>;
 
@@ -29,6 +30,7 @@ export function ProductDetailScreen({ route, navigation }: Props) {
   }
 
   const isAr = i18n.language === 'ar';
+  const lang = isAr ? 'ar' : 'en';
   const name = isAr ? listing.nameAr : listing.nameEn;
   const description = isAr ? listing.descriptionAr : listing.descriptionEn;
   const city = isAr ? listing.cityAr : listing.cityEn;
@@ -50,7 +52,7 @@ export function ProductDetailScreen({ route, navigation }: Props) {
 
         <Text style={styles.name}>{name}</Text>
         <Text style={styles.price}>
-          ${listing.pricePerUnit.toFixed(2)} {t('product.pricePerUnit', { unit: unitLabel })}
+          {formatPrice(listing.pricePerUnit, lang)} {t('product.pricePerUnit', { unit: unitLabel })}
         </Text>
 
         <View style={styles.infoRow}>
@@ -83,7 +85,7 @@ export function ProductDetailScreen({ route, navigation }: Props) {
 
         <View style={styles.totalRow}>
           <Text style={styles.totalLabel}>{t('product.totalPrice')}</Text>
-          <Text style={styles.totalValue}>${total.toFixed(2)}</Text>
+          <Text style={styles.totalValue}>{formatPrice(total, lang)}</Text>
         </View>
       </ScrollView>
 

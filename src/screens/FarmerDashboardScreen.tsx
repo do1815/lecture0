@@ -7,6 +7,7 @@ import { EmptyState } from '../components/EmptyState';
 import { useApp } from '../context/AppContext';
 import { colors, radius, spacing } from '../theme/colors';
 import { DashboardStackParamList } from '../navigation/types';
+import { formatPrice } from '../utils/currency';
 
 type Props = NativeStackScreenProps<DashboardStackParamList, 'MyListings'>;
 
@@ -14,6 +15,7 @@ export function FarmerDashboardScreen({ navigation }: Props) {
   const { t, i18n } = useTranslation();
   const { listings, user } = useApp();
   const isAr = i18n.language === 'ar';
+  const lang = isAr ? 'ar' : 'en';
 
   const myListings = listings
     .filter((l) => l.farmerId === user?.id)
@@ -48,7 +50,7 @@ export function FarmerDashboardScreen({ navigation }: Props) {
               <View style={styles.info}>
                 <Text style={styles.name}>{name}</Text>
                 <Text style={styles.price}>
-                  ${item.pricePerUnit.toFixed(2)} / {t(`common.${item.unit}`)}
+                  {formatPrice(item.pricePerUnit, lang)} / {t(`common.${item.unit}`)}
                 </Text>
                 <Text style={styles.quantity}>
                   {t('dashboard.quantityLeft', {

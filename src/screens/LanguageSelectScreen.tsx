@@ -18,8 +18,16 @@ export function LanguageSelectScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.content}>
-        <Text style={styles.emoji}>🌴</Text>
-        <Text style={styles.appName}>{t('common.appName')}</Text>
+        <View style={styles.logoBadge}>
+          <Text style={styles.logoEmoji}>🌴</Text>
+        </View>
+
+        <View style={styles.wordmarkRow}>
+          <Text style={styles.wordmarkEn}>Bustan</Text>
+          <View style={styles.wordmarkDot} />
+          <Text style={styles.wordmarkAr}>بستان</Text>
+        </View>
+
         <Text style={styles.title}>{t('language.title')}</Text>
         <Text style={styles.subtitle}>{t('language.subtitle')}</Text>
 
@@ -52,15 +60,42 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     padding: spacing.xl,
   },
-  emoji: {
-    fontSize: 64,
-    marginBottom: spacing.sm,
+  logoBadge: {
+    width: 108,
+    height: 108,
+    borderRadius: 54,
+    backgroundColor: colors.primaryLight,
+    borderWidth: 3,
+    borderColor: colors.accent,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: spacing.md,
   },
-  appName: {
-    fontSize: 24,
+  logoEmoji: {
+    fontSize: 52,
+  },
+  wordmarkRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: spacing.lg,
+  },
+  wordmarkEn: {
+    fontSize: 26,
     fontWeight: '800',
     color: colors.primaryDark,
-    marginBottom: spacing.lg,
+    letterSpacing: 0.5,
+  },
+  wordmarkDot: {
+    width: 6,
+    height: 6,
+    borderRadius: 3,
+    backgroundColor: colors.accent,
+    marginHorizontal: spacing.sm,
+  },
+  wordmarkAr: {
+    fontSize: 26,
+    fontWeight: '800',
+    color: colors.accent,
   },
   title: {
     fontSize: 20,

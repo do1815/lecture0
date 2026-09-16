@@ -9,6 +9,7 @@ import { QuantityStepper } from '../components/QuantityStepper';
 import { useApp } from '../context/AppContext';
 import { colors, radius, spacing } from '../theme/colors';
 import { BuyerTabParamList } from '../navigation/types';
+import { formatPrice } from '../utils/currency';
 
 type Props = BottomTabScreenProps<BuyerTabParamList, 'Cart'>;
 
@@ -16,6 +17,7 @@ export function CartScreen({ navigation }: Props) {
   const { t, i18n } = useTranslation();
   const { cart, listings, updateCartQuantity, removeFromCart, placeOrder } = useApp();
   const isAr = i18n.language === 'ar';
+  const lang = isAr ? 'ar' : 'en';
 
   const items = cart
     .map((item) => {
@@ -66,7 +68,8 @@ export function CartScreen({ navigation }: Props) {
               <View style={styles.info}>
                 <Text style={styles.name}>{name}</Text>
                 <Text style={styles.price}>
-                  ${item.listing.pricePerUnit.toFixed(2)} / {t(`common.${item.listing.unit}`)}
+                  {formatPrice(item.listing.pricePerUnit, lang)} /{' '}
+                  {t(`common.${item.listing.unit}`)}
                 </Text>
                 <TouchableOpacity onPress={() => removeFromCart(item.listingId)}>
                   <Text style={styles.remove}>{t('cart.remove')}</Text>
@@ -86,7 +89,7 @@ export function CartScreen({ navigation }: Props) {
       <View style={styles.footer}>
         <View style={styles.subtotalRow}>
           <Text style={styles.subtotalLabel}>{t('cart.subtotal')}</Text>
-          <Text style={styles.subtotalValue}>${subtotal.toFixed(2)}</Text>
+          <Text style={styles.subtotalValue}>{formatPrice(subtotal, lang)}</Text>
         </View>
         <PrimaryButton title={t('cart.checkout')} onPress={handleCheckout} />
       </View>

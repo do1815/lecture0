@@ -7,11 +7,13 @@ import { StatusBadge } from '../components/StatusBadge';
 import { useApp } from '../context/AppContext';
 import { colors, radius, spacing } from '../theme/colors';
 import { Order } from '../types';
+import { formatPrice } from '../utils/currency';
 
 export function OrdersScreen() {
   const { t, i18n } = useTranslation();
   const { orders, user, updateOrderStatus } = useApp();
   const isAr = i18n.language === 'ar';
+  const lang = isAr ? 'ar' : 'en';
   const isFarmer = user?.role === 'farmer';
 
   const myOrders = orders
@@ -91,14 +93,14 @@ export function OrdersScreen() {
                   {isAr ? it.nameAr : it.nameEn} × {it.quantity} {t(`common.${it.unit}`)}
                 </Text>
                 <Text style={styles.itemPrice}>
-                  ${(it.priceAtOrder * it.quantity).toFixed(2)}
+                  {formatPrice(it.priceAtOrder * it.quantity, lang)}
                 </Text>
               </View>
             ))}
 
             <View style={styles.totalRow}>
               <Text style={styles.totalLabel}>{t('orders.total')}</Text>
-              <Text style={styles.totalValue}>${item.total.toFixed(2)}</Text>
+              <Text style={styles.totalValue}>{formatPrice(item.total, lang)}</Text>
             </View>
 
             {renderActions(item)}
