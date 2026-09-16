@@ -8,7 +8,7 @@ import { Language } from '../types';
 
 const OPTIONS: { code: Language; label: string; flag: string }[] = [
   { code: 'en', label: 'English', flag: '🇬🇧' },
-  { code: 'ar', label: 'العربية', flag: '🇮🇶' },
+  { code: 'ar', label: 'العربية', flag: '🇴🇲' },
 ];
 
 export function LanguageSelectScreen() {
@@ -18,7 +18,7 @@ export function LanguageSelectScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.content}>
-        <Text style={styles.emoji}>🌾</Text>
+        <Text style={styles.emoji}>🌴</Text>
         <Text style={styles.appName}>{t('common.appName')}</Text>
         <Text style={styles.title}>{t('language.title')}</Text>
         <Text style={styles.subtitle}>{t('language.subtitle')}</Text>

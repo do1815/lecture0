@@ -202,7 +202,7 @@ const styles = StyleSheet.create({
     fontSize: 13,
   },
   cancelButton: {
-    backgroundColor: '#FCE4E4',
+    backgroundColor: '#F5E0DC',
   },
   cancelText: {
     color: colors.danger,
